@@ -38,6 +38,20 @@ int main(void) {
     }
   }
 }
+float mc_pi(int n)
+{int inside=0;
+float x;
+float y;
+for(int i=1;i<=n;i++)
+{  x= frandom();
+y=frandom();
+if(sqrt((x*x)+(y*y))<=1)
+{inside=inside+1;
+}
+}
+return 4.0*inside/(float)n;
+}
+
 
 
 
